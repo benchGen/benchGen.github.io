@@ -1,0 +1,51 @@
+\doxysection{generator\+Scope.\+h}
+\hypertarget{generatorScope_8h_source}{}\label{generatorScope_8h_source}\index{/home/silva/meu/BenchGen/src/gen/generator/generatorScope.h@{/home/silva/meu/BenchGen/src/gen/generator/generatorScope.h}}
+\mbox{\hyperlink{generatorScope_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GENERATORSCOPE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GENERATORSCOPE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{enums_8h}{../shared/enums.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{globalStructs_8h}{../shared/globalStructs.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{generatorVariable_8h}{generatorVariable.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGeneratorScope}{GeneratorScope}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ indentation;\ \ \textcolor{comment}{//\ The\ current\ level\ of\ indentation\ for\ the\ scope}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGeneratorScope_ac47f14a9582fbbb53cd4917a0efcd99b}{numberOfAddedVars}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Number\ of\ variables\ added\ to\ this\ scope}}
+\DoxyCodeLine{00021\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{classGeneratorScope_a2302ef2d49c30a9e51b0d1f3494f13b1}{avaiableVarsID}};\ \ \ \ \textcolor{comment}{//\ List\ of\ available\ variable\ IDs\ in\ this\ scope}}
+\DoxyCodeLine{00022\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{classGeneratorScope_a098b83b9c2b12b8c19dfa9a7cf5f08b2}{avaiableParamsID}};\ \ \textcolor{comment}{//\ List\ of\ available\ parameter\ IDs\ in\ this\ scope}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{classGeneratorScope_a48f77ea07a9d9f5d6c6d84ebf895ff5d}{GeneratorScope}}(\textcolor{keywordtype}{int}\ identation\ =\ 1)\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGeneratorScope_a2302ef2d49c30a9e51b0d1f3494f13b1}{avaiableVarsID}}\ =\ \{\};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGeneratorScope_a098b83b9c2b12b8c19dfa9a7cf5f08b2}{avaiableParamsID}}\ =\ \{\};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGeneratorScope_ac47f14a9582fbbb53cd4917a0efcd99b}{numberOfAddedVars}}\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ this-\/>indentation\ =\ identation;}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classGeneratorScope_a784dd4e38b784696edec93f97570b488}{GeneratorScope}}(std::vector<int>\ parentVars,\ std::vector<int>\ parentParams,\ \textcolor{keywordtype}{int}\ parentIndentation)\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ this-\/>avaiableVarsID\ =\ parentVars;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ this-\/>avaiableParamsID\ =\ parentParams;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ this-\/>numberOfAddedVars\ =\ 0;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ this-\/>indentation\ =\ parentIndentation\ +\ 1;}
+\DoxyCodeLine{00052\ \ \ \ \ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{classGeneratorScope_aa630e1a983ff105e5ff30c8a5bbef064}{\string~GeneratorScope}}()\ \{\}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGeneratorScope_ae3ce195daac642202f5883515c236eae}{getVarCounter}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGeneratorScope_af9db4292c47f74158f80134bc15a89b6}{getIndentation}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00084\ \ \ \ \ std::string\ \mbox{\hyperlink{classGeneratorScope_a36f0117d1c40929cab40af0944351729}{getIndentationTabs}}(\textcolor{keywordtype}{int}\ =\ 0);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeneratorScope_aa556e693c1b917955b033700881fc21b}{addVar}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGeneratorScope_aa6ca852bf1bc60638981056f510dc2d6}{addParam}}();}
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

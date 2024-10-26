@@ -1,0 +1,42 @@
+\doxysection{lexer.\+h}
+\hypertarget{lexer_8h_source}{}\label{lexer_8h_source}\index{/home/silva/meu/BenchGen/src/gen/lexer/lexer.h@{/home/silva/meu/BenchGen/src/gen/lexer/lexer.h}}
+\mbox{\hyperlink{lexer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LEXER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LEXER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <regex>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{enums_8h}{../shared/enums.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{globalStructs_8h}{../shared/globalStructs.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ }std::ifstream;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLexer}{Lexer}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ std::vector<LexerRule>\ rules;\ \ \textcolor{comment}{//\ Vector\ holding\ the\ lexer\ rules}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00033\ \ \ \ \ std::vector<std::string>\ readFile(std::string\ fileName);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00044\ \ \ \ \ std::vector<Token>\ tokenize(std::string\ input);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{bool}\ matchAnyRule(std::string\ input);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ matchToken(std::string\ input);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{classLexer_a2752a2b16cc1ffbcb8fc3e82e95bf331}{Lexer}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLexer_afe3589775612d8f22f7855727b5b483a}{loadConfiguration}}();}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00090\ \ \ \ \ std::vector<Token>\ \mbox{\hyperlink{classLexer_ac88a93f87a3ca91ef6a53cefaa980f9a}{getTokens}}(std::string\ fileName);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00100\ \ \ \ \ std::vector<ProductionRule>\ \mbox{\hyperlink{classLexer_afd212967afe5cec638318df193b37b07}{getProductionRules}}(std::string\ fileName);}
+\DoxyCodeLine{00101\ \};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

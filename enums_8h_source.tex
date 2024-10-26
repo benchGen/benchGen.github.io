@@ -1,0 +1,36 @@
+\doxysection{enums.\+h}
+\hypertarget{enums_8h_source}{}\label{enums_8h_source}\index{/home/silva/meu/BenchGen/src/gen/shared/enums.h@{/home/silva/meu/BenchGen/src/gen/shared/enums.h}}
+\mbox{\hyperlink{enums_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ENUMS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ENUMS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921}{TokenType}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a28dd4809849b70364665cce314940bff}{TOK\_IF}}\ =\ -\/2,\ \ \ \ \textcolor{comment}{//\ Token\ for\ an\ "{}if"{}\ statement}}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a9c1c75e709613badfa3ccdd04b697925}{TOK\_LOOP}}\ =\ -\/3,\ \ \textcolor{comment}{//\ Token\ for\ a\ loop}}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921ab7cf390842a397e855ca3f5761f40ecf}{TOK\_CALL}}\ =\ -\/4,\ \ \textcolor{comment}{//\ Token\ for\ a\ function\ call}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a7bda1e29a002affba0cc157b412188a5}{TOK\_SEQ}}\ =\ -\/5,\ \ \ \textcolor{comment}{//\ Token\ for\ a\ sequence\ operation}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a63051c2437e8016ad9bd71d8e12f33e1}{TOK\_INSERT}}\ =\ -\/6,\ \ \ \ \textcolor{comment}{//\ Token\ for\ an\ insert\ operation}}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a6804131f64ff4341684e0d57b8096371}{TOK\_REMOVE}}\ =\ -\/7,\ \ \ \ \textcolor{comment}{//\ Token\ for\ a\ remove\ operation}}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a59623e8c55ce15c42e627fae11c1952e}{TOK\_NEW}}\ =\ -\/8,\ \ \ \ \ \ \ \textcolor{comment}{//\ Token\ for\ creating\ a\ new\ variable}}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a1075fd4dea1f8a18806afc8e3fad829e}{TOK\_CONTAINS}}\ =\ -\/9,\ \ \textcolor{comment}{//\ Token\ for\ a\ contains\ operation}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921aff129834bc4016845b837946c1e955fc}{TOK\_END}}\ =\ -\/10,\ \ \textcolor{comment}{//\ Token\ marking\ the\ end\ of\ a\ production\ rule\ (e.g.,\ ';')}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921ad27a68ca1cd0427467c2ba496061ee96}{TOK\_OPAREN}}\ =\ -\/11,\ \ \ \textcolor{comment}{//\ Token\ for\ an\ open\ parenthesis\ '('}}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a3ca306ac619f9371263c4df353109e72}{TOK\_CPAREN}}\ =\ -\/12,\ \ \ \textcolor{comment}{//\ Token\ for\ a\ close\ parenthesis\ ')'}}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a62cdeef3d4613afb658caae912e99272}{TOK\_COMMA}}\ =\ -\/13,\ \ \ \ \textcolor{comment}{//\ Token\ for\ a\ comma\ ','}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a5e5eef8d6035d71373acf043aa3ee929}{TOK\_EQUAL}}\ =\ -\/14,\ \ \ \ \textcolor{comment}{//\ Token\ for\ an\ equality\ check\ or\ assignment\ '='}}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921af0f634fe986fc7059ded18291d51ff52}{TOK\_COMMENT}}\ =\ -\/15,\ \ \textcolor{comment}{//\ Token\ for\ a\ comment\ line\ (e.g.,\ '\#')}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a7ab6a53757cfe2a0fc35ee646bd1cbeb}{TOK\_ID}}\ =\ -\/16,\ \ \textcolor{comment}{//\ Token\ for\ an\ identifier\ (e.g.,\ production\ rules\ names)}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a8967ec28e5566de7516e41c9542c5f58}{TOK\_CALL\_ID}}\ =\ -\/17,\ \ \textcolor{comment}{//\ Token\ specifically\ for\ function\ call\ identifiers}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{enums_8h_aa520fbf142ba1e7e659590c07da31921a1e45d4c51261381ea32625e93e1c6ea0}{TOK\_ERROR}}\ =\ -\/1\ \ \textcolor{comment}{//\ Token\ indicating\ an\ error\ or\ unrecognized\ token}}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

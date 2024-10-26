@@ -1,0 +1,265 @@
+\doxysection{Generator\+Sorted\+List Class Reference}
+\hypertarget{classGeneratorSortedList}{}\label{classGeneratorSortedList}\index{GeneratorSortedList@{GeneratorSortedList}}
+
+
+{\ttfamily \#include $<$generator\+Variable.\+h$>$}
+
+
+
+Inheritance diagram for Generator\+Sorted\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classGeneratorSortedList__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Generator\+Sorted\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classGeneratorSortedList__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGeneratorSortedList_a1f83b390f519de7109677aa2fd7b4c71}{Generator\+Sorted\+List}} ()
+\item 
+\mbox{\hyperlink{classGeneratorSortedList_a820fe1a50af3e28eaa36c304119670fb}{Generator\+Sorted\+List}} (int \mbox{\hyperlink{classGeneratorVariable_a6405b2c851f96a0b9bc609e82e11d9b6}{id}})
+\item 
+\mbox{\hyperlink{classGeneratorSortedList_a50623ec240736ccde661ab8757320fd3}{\texorpdfstring{$\sim$}{\string~}\+Generator\+Sorted\+List}} ()
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGeneratorSortedList_ab69a34c60931660995466f3ed0ea3da9}{new\+\_\+}} (bool in\+Function=false) override
+\begin{DoxyCompactList}\small\item\em Creates a new variable. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGeneratorSortedList_ae9d9596f96930cb42d7dec87b483b9d3}{insert}} () override
+\begin{DoxyCompactList}\small\item\em Generates code to perform an insertion operation on the variable. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGeneratorSortedList_aeb33c7e0d4f79515f793936bf9542ab6}{remove}} () override
+\begin{DoxyCompactList}\small\item\em Generates code to perform a removal operation on the variable. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGeneratorSortedList_a7b57d1967290e292d901b4944fe21142}{contains}} (bool should\+Return=false) override
+\begin{DoxyCompactList}\small\item\em Generates code to perform a contains operation on the variable. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGeneratorSortedList_aabd88de935470fa3e42cfd2d918b4e9b}{free}} () override
+\begin{DoxyCompactList}\small\item\em Generates code to free or release resources associated with the variable. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGeneratorSortedList_a8fb6f0ecd8b9e082c4674436fe0f0af3}{gen\+Includes}} () override
+\begin{DoxyCompactList}\small\item\em Generates necessary include statements for the variable. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGeneratorSortedList_af0e2c6c3b5b1b609411bd3a9cf381a97}{gen\+Global\+Vars}} () override
+\begin{DoxyCompactList}\small\item\em Generates global variable declarations for the variable type. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGeneratorSortedList_a882bb5982acc361d34c0d87ceb1b4bcd}{gen\+Params}} (std\+::string param\+Name, std\+::vector$<$ \mbox{\hyperlink{classGeneratorVariable}{Generator\+Variable}} \texorpdfstring{$\ast$}{*} $>$ vars\+Params) override
+\begin{DoxyCompactList}\small\item\em Generates parameter handling code for functions using this variable type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classGeneratorVariable}{Generator\+Variable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGeneratorVariable_a0491c8d291877ae428bbdef208519f6f}{\texorpdfstring{$\sim$}{\string~}\+Generator\+Variable}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classGeneratorVariable}{Generator\+Variable}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classGeneratorVariable_a6405b2c851f96a0b9bc609e82e11d9b6}{id}}
+\item 
+std\+::string \mbox{\hyperlink{classGeneratorVariable_a34521795d468fdcbfdb49a4157c01743}{name}}
+\item 
+std\+::string \mbox{\hyperlink{classGeneratorVariable_ad1c1aaa33727679158ccc11a6f1779b8}{type\+String}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classGeneratorSortedList_a1f83b390f519de7109677aa2fd7b4c71}\index{GeneratorSortedList@{GeneratorSortedList}!GeneratorSortedList@{GeneratorSortedList}}
+\index{GeneratorSortedList@{GeneratorSortedList}!GeneratorSortedList@{GeneratorSortedList}}
+\doxysubsubsection{\texorpdfstring{GeneratorSortedList()}{GeneratorSortedList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classGeneratorSortedList_a1f83b390f519de7109677aa2fd7b4c71} 
+Generator\+Sorted\+List\+::\+Generator\+Sorted\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classGeneratorSortedList_a820fe1a50af3e28eaa36c304119670fb}\index{GeneratorSortedList@{GeneratorSortedList}!GeneratorSortedList@{GeneratorSortedList}}
+\index{GeneratorSortedList@{GeneratorSortedList}!GeneratorSortedList@{GeneratorSortedList}}
+\doxysubsubsection{\texorpdfstring{GeneratorSortedList()}{GeneratorSortedList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classGeneratorSortedList_a820fe1a50af3e28eaa36c304119670fb} 
+Generator\+Sorted\+List\+::\+Generator\+Sorted\+List (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classGeneratorSortedList_a50623ec240736ccde661ab8757320fd3}\index{GeneratorSortedList@{GeneratorSortedList}!````~GeneratorSortedList@{\texorpdfstring{$\sim$}{\string~}GeneratorSortedList}}
+\index{````~GeneratorSortedList@{\texorpdfstring{$\sim$}{\string~}GeneratorSortedList}!GeneratorSortedList@{GeneratorSortedList}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GeneratorSortedList()}{\string~GeneratorSortedList()}}
+{\footnotesize\ttfamily \label{classGeneratorSortedList_a50623ec240736ccde661ab8757320fd3} 
+Generator\+Sorted\+List\+::\texorpdfstring{$\sim$}{\string~}\+Generator\+Sorted\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGeneratorSortedList_a7b57d1967290e292d901b4944fe21142}\index{GeneratorSortedList@{GeneratorSortedList}!contains@{contains}}
+\index{contains@{contains}!GeneratorSortedList@{GeneratorSortedList}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily \label{classGeneratorSortedList_a7b57d1967290e292d901b4944fe21142} 
+std\+::vector$<$ std\+::string $>$ Generator\+Sorted\+List\+::contains (\begin{DoxyParamCaption}\item[{bool}]{should\+Return}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates code to perform a contains operation on the variable. 
+
+The behavior of this method varies depending on the type of the variable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em should\+Return} & Indicates whether the method should generate code that returns a value based on the condition. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of strings representing the code to check the condition. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGeneratorVariable_a8306f1993822fbf8e3dfabf78986b134}{Generator\+Variable}}.
+
+\Hypertarget{classGeneratorSortedList_aabd88de935470fa3e42cfd2d918b4e9b}\index{GeneratorSortedList@{GeneratorSortedList}!free@{free}}
+\index{free@{free}!GeneratorSortedList@{GeneratorSortedList}}
+\doxysubsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily \label{classGeneratorSortedList_aabd88de935470fa3e42cfd2d918b4e9b} 
+std\+::vector$<$ std\+::string $>$ Generator\+Sorted\+List\+::free (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates code to free or release resources associated with the variable. 
+
+This method generates code to clean up or release resources held by the variable, if necessary. The specific actions taken depend on the type of the variable and how resources are managed.
+
+\begin{DoxyReturn}{Returns}
+A vector of strings representing the code to free the variable. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGeneratorVariable_ae1c224716b7abb7741bac955632d3ffb}{Generator\+Variable}}.
+
+\Hypertarget{classGeneratorSortedList_af0e2c6c3b5b1b609411bd3a9cf381a97}\index{GeneratorSortedList@{GeneratorSortedList}!genGlobalVars@{genGlobalVars}}
+\index{genGlobalVars@{genGlobalVars}!GeneratorSortedList@{GeneratorSortedList}}
+\doxysubsubsection{\texorpdfstring{genGlobalVars()}{genGlobalVars()}}
+{\footnotesize\ttfamily \label{classGeneratorSortedList_af0e2c6c3b5b1b609411bd3a9cf381a97} 
+std\+::vector$<$ std\+::string $>$ Generator\+Sorted\+List\+::gen\+Global\+Vars (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates global variable declarations for the variable type. 
+
+This method returns a vector of strings representing the typedefs and struct definitions necessary for the specific variable type.
+
+\begin{DoxyReturn}{Returns}
+A vector of strings, each representing a global variable or type definition. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGeneratorVariable_ae0da32bb62355d1e26ef8f035d3e0599}{Generator\+Variable}}.
+
+\Hypertarget{classGeneratorSortedList_a8fb6f0ecd8b9e082c4674436fe0f0af3}\index{GeneratorSortedList@{GeneratorSortedList}!genIncludes@{genIncludes}}
+\index{genIncludes@{genIncludes}!GeneratorSortedList@{GeneratorSortedList}}
+\doxysubsubsection{\texorpdfstring{genIncludes()}{genIncludes()}}
+{\footnotesize\ttfamily \label{classGeneratorSortedList_a8fb6f0ecd8b9e082c4674436fe0f0af3} 
+std\+::vector$<$ std\+::string $>$ Generator\+Sorted\+List\+::gen\+Includes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates necessary include statements for the variable. 
+
+This method returns a vector of strings containing the required include directives for working with the variable type.
+
+\begin{DoxyReturn}{Returns}
+A vector of strings representing include directives. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGeneratorVariable_a007c2bd0773b039fb39da0dc2e94c498}{Generator\+Variable}}.
+
+\Hypertarget{classGeneratorSortedList_a882bb5982acc361d34c0d87ceb1b4bcd}\index{GeneratorSortedList@{GeneratorSortedList}!genParams@{genParams}}
+\index{genParams@{genParams}!GeneratorSortedList@{GeneratorSortedList}}
+\doxysubsubsection{\texorpdfstring{genParams()}{genParams()}}
+{\footnotesize\ttfamily \label{classGeneratorSortedList_a882bb5982acc361d34c0d87ceb1b4bcd} 
+std\+::vector$<$ std\+::string $>$ Generator\+Sorted\+List\+::gen\+Params (\begin{DoxyParamCaption}\item[{std\+::string}]{param\+Name}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{classGeneratorVariable}{Generator\+Variable}} \texorpdfstring{$\ast$}{*} $>$}]{vars\+Params}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates parameter handling code for functions using this variable type. 
+
+This method generates code to handle parameters when functions utilize this variable type. It includes initialization and assignment for the parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Name} & The name of the parameter. \\
+\hline
+{\em vars\+Params} & List of variables to be used as parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of strings representing the code for parameter handling. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGeneratorVariable_a035e45819a3108032c59efdcc535d4bc}{Generator\+Variable}}.
+
+\Hypertarget{classGeneratorSortedList_ae9d9596f96930cb42d7dec87b483b9d3}\index{GeneratorSortedList@{GeneratorSortedList}!insert@{insert}}
+\index{insert@{insert}!GeneratorSortedList@{GeneratorSortedList}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{classGeneratorSortedList_ae9d9596f96930cb42d7dec87b483b9d3} 
+std\+::vector$<$ std\+::string $>$ Generator\+Sorted\+List\+::insert (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates code to perform an insertion operation on the variable. 
+
+The exact behavior of this method depends on the type of the variable.
+
+\begin{DoxyReturn}{Returns}
+A vector of strings representing the insertion operation code. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGeneratorVariable_a3e3b7bf3e80c790fbbda85bb4db8f5e2}{Generator\+Variable}}.
+
+\Hypertarget{classGeneratorSortedList_ab69a34c60931660995466f3ed0ea3da9}\index{GeneratorSortedList@{GeneratorSortedList}!new\_@{new\_}}
+\index{new\_@{new\_}!GeneratorSortedList@{GeneratorSortedList}}
+\doxysubsubsection{\texorpdfstring{new\_()}{new\_()}}
+{\footnotesize\ttfamily \label{classGeneratorSortedList_ab69a34c60931660995466f3ed0ea3da9} 
+std\+::vector$<$ std\+::string $>$ Generator\+Sorted\+List\+::new\+\_\+ (\begin{DoxyParamCaption}\item[{bool}]{in\+Function}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Creates a new variable. 
+
+This method generates code to initialize a new variable. The exact implementation depends on the specific type of the variable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Function} & Indicates whether the variable is created within a function context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of strings representing the code to create the variable. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGeneratorVariable_abf1f2554a242ce8b54995d912c3c8e6f}{Generator\+Variable}}.
+
+\Hypertarget{classGeneratorSortedList_aeb33c7e0d4f79515f793936bf9542ab6}\index{GeneratorSortedList@{GeneratorSortedList}!remove@{remove}}
+\index{remove@{remove}!GeneratorSortedList@{GeneratorSortedList}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classGeneratorSortedList_aeb33c7e0d4f79515f793936bf9542ab6} 
+std\+::vector$<$ std\+::string $>$ Generator\+Sorted\+List\+::remove (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates code to perform a removal operation on the variable. 
+
+The behavior of this method varies depending on the type of the variable.
+
+\begin{DoxyReturn}{Returns}
+A vector of strings representing the removal operation code. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGeneratorVariable_a89bac8f086552590fb3e99b75e2c46cc}{Generator\+Variable}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/silva/meu/\+Bench\+Gen/src/gen/generator/\mbox{\hyperlink{generatorVariable_8h}{generator\+Variable.\+h}}\item 
+/home/silva/meu/\+Bench\+Gen/src/gen/generator/\mbox{\hyperlink{generatorVariable_8cpp}{generator\+Variable.\+cpp}}\end{DoxyCompactItemize}

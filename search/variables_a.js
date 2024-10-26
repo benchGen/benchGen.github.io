@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['varcounter_305',['varCounter',['../classGenerator.html#ad11cf008479d85cad8dde1a502a714b6',1,'Generator']]],
-  ['variables_306',['variables',['../classGenerator.html#ab8865afc41af5096f31efab1de1f99ae',1,'Generator']]],
-  ['vartype_307',['varType',['../classGenerator.html#a879c5349bc03a52f947ae824189ce8e0',1,'Generator']]]
+  ['text_0',['text',['../structToken.html#af992ca6fb756dfdfb4cd474ef8fb6e9d',1,'Token']]],
+  ['totalsize_1',['totalSize',['../classGeneratorArray.html#ab5daa04dd4b60fdf2dd96f690c03dcf1',1,'GeneratorArray']]],
+  ['type_2',['type',['../structLexerRule.html#aa10cadbfd76a06590f33efdd16cb11a2',1,'LexerRule::type'],['../structToken.html#ae46b6b806df89709a13a14dc76c86623',1,'Token::type']]],
+  ['typestring_3',['typeString',['../classGeneratorVariable.html#ad1c1aaa33727679158ccc11a6f1779b8',1,'GeneratorVariable']]]
 ];

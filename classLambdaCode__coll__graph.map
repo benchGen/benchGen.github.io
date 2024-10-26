@@ -1,0 +1,5 @@
+<map id="LambdaCode" name="LambdaCode">
+<area shape="rect" id="Node000001" title="Represents a lambda expression in the AST." alt="" coords="5,81,112,109"/>
+<area shape="rect" id="Node000002" href="$classNode.html" title="Base class for all nodes in the abstract syntax tree (AST)." alt="" coords="31,5,86,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,49,61,81,56,81,56,49"/>
+</map>

@@ -1,0 +1,184 @@
+\doxysection{ast.\+h}
+\hypertarget{ast_8h_source}{}\label{ast_8h_source}\index{/home/silva/meu/BenchGen/src/gen/ast/ast.h@{/home/silva/meu/BenchGen/src/gen/ast/ast.h}}
+\mbox{\hyperlink{ast_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ AST\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ AST\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{generator_8h}{../generator/generator.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{enums_8h}{../shared/enums.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{globalStructs_8h}{../shared/globalStructs.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00017\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{ast_8h_af12984b6a0989c6d6f10ae4945014a2e}{printIndentationSpaces}}(\textcolor{keywordtype}{int}\ indent);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00028\ std::string\ \mbox{\hyperlink{ast_8h_ab44b775fa3c3f1c1fee7e02c98ed08cf}{generateIfCondition}}(\mbox{\hyperlink{classGenerator}{Generator}}\&\ generator);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00036\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classNode_abce703f211f6a577085b4b8ad68cbb19}{\string~Node}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNode_a21e4ebe899c1ec58f42940c61db0326c}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ =\ 0;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNode_aae6f19c98b72b2d5ce0fc64de1939d7c}{print}}(\textcolor{keywordtype}{int}\ indent\ =\ 0)\ =\ 0;}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classStatementCode}{StatementCode}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00060\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00061\ \ \ \ \ std::shared\_ptr<Node>\ stmt;\ \ \textcolor{comment}{//\ The\ statement\ node}}
+\DoxyCodeLine{00062\ \ \ \ \ std::shared\_ptr<Node>\ code;\ \ \textcolor{comment}{//\ The\ following\ code\ block}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{classStatementCode_a481234945f29f80512d321dd570c2faa}{StatementCode}}(std::shared\_ptr<Node>\ stmt,\ std::shared\_ptr<Node>\ code)\ :\ stmt(stmt),\ code(code)\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStatementCode_a7b3031af7dc041750f76cebae503b104}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStatementCode_aa908aafcd7de9d79e19d5d6562d59e21}{print}}(\textcolor{keywordtype}{int})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00071\ \};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLambdaCode}{LambdaCode}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00079\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLambdaCode_a608cf7b97c85ef9115450b12513bd0e1}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLambdaCode_adedde62c0d7dc8d6196cc760cedb4741}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classId}{Id}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00091\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00092\ \ \ \ \ std::string\ id;\ \ \textcolor{comment}{//\ The\ identifier's\ name}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{classId_a6e5174709e0a4f8096fda3d697454244}{Id}}(std::string\ \textcolor{keywordtype}{id})\ :\ id(id)\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classId_a603f9e3f1546d940e5121d0893e811fc}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classId_aa8cc90f296b03b513ded7f9f6e323989}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00101\ \};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00108\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classInsert}{Insert}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00109\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInsert_aff52102ced856939c80ede20afd8a66d}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInsert_a0486097b2a39d6aff62e6df79e872591}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00113\ \};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00120\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classRemove}{Remove}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00121\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classRemove_a31167f398b8dfcc6f85e18bbb41d7ccf}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classRemove_a6ccdd2b2661f5a39708cd789832c7c8c}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00125\ \};}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00132\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classNew}{New}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00133\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNew_ab23f270b04f94f1d52ec4fb385bf53d2}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNew_ae3e47d0e19c145dd2da67e9683ae32ef}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00137\ \};}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00144\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classContains}{Contains}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00145\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classContains_ade4c0032d20a89d7ab5d067d0c9a9abb}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classContains_af507194aa920e946f461d02583378070}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00149\ \};}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00156\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLoop}{Loop}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00157\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00158\ \ \ \ \ std::shared\_ptr<Node>\ code;\ \ \textcolor{comment}{//\ The\ code\ block\ to\ be\ executed\ in\ the\ loop}}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00161\ \ \ \ \ \mbox{\hyperlink{classLoop_aed6dab77986924397c47643609769d41}{Loop}}(std::shared\_ptr<Node>\ code)\ :\ code(code)\ \{}
+\DoxyCodeLine{00162\ \ \ \ \ \}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLoop_aaa30f19a52ecbee8d8f8f9046305062c}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLoop_a71209ea4674edaf15d452a5dd74f345e}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00167\ \};}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00174\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCall}{Call}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00175\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordtype}{int}\ id;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ ID\ of\ the\ function\ being\ called}}
+\DoxyCodeLine{00177\ \ \ \ \ std::shared\_ptr<Node>\ code;\ \ \textcolor{comment}{//\ The\ code\ block\ of\ the\ function}}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classCall_a977188e1f5e145d268424866429df16f}{conditionalCounts}};\ \ \textcolor{comment}{//\ Tracks\ the\ number\ of\ conditional\ statements\ in\ the\ call}}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \ \ \ \ \mbox{\hyperlink{classCall_a91643e50c00e2f7696032dff7bfb7f2c}{Call}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ std::shared\_ptr<Node>\ code)\ :\ id(id),\ code(code),\ \mbox{\hyperlink{classCall_a977188e1f5e145d268424866429df16f}{conditionalCounts}}(0)\ \{}
+\DoxyCodeLine{00183\ \ \ \ \ \}}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \ \ \ \ \mbox{\hyperlink{classCall_a7fdd4cfe0b5f415e20d390bcc906c7cd}{Call}}()\ :\ \mbox{\hyperlink{classCall_a977188e1f5e145d268424866429df16f}{conditionalCounts}}(0)\ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \}}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCall_a9aeaa3b533ada5146524c03f158a1a7e}{setId}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ this-\/>\textcolor{keywordtype}{id}\ =\ id;}
+\DoxyCodeLine{00195\ \ \ \ \ \}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCall_adfc5f099ddb9f72daff4dc93c0d3140a}{setCode}}(std::shared\_ptr<Node>\ code)\ \{}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ this-\/>code\ =\ code;}
+\DoxyCodeLine{00204\ \ \ \ \ \}}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCall_a393f9208e44aa79d1463fd95d3cc87da}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCall_ad89f08479f9228e0c91de0cf34d9f9f9}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00209\ \};}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00216\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSeq}{Seq}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00217\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00218\ \ \ \ \ std::shared\_ptr<Node>\ code;\ \ \textcolor{comment}{//\ The\ code\ block\ for\ the\ sequence}}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00221\ \ \ \ \ \mbox{\hyperlink{classSeq_a6f5e843c710a198e6621d66d4378ceaa}{Seq}}(std::shared\_ptr<Node>\ code)\ :\ code(code)\ \{}
+\DoxyCodeLine{00222\ \ \ \ \ \}}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSeq_a679a49dde83d81cae0c131b257d04138}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00226\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSeq_ac5c14d785d983f960c7d63d86a685fec}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00227\ \};}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00234\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIf}{If}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00235\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00236\ \ \ \ \ std::shared\_ptr<Node>\ ifParam;\ \ \textcolor{comment}{//\ The\ parameters\ for\ the\ if\ statement}}
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00238\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00239\ \ \ \ \ \mbox{\hyperlink{classIf_afab80ba1c82747536ab2d2828f9fde75}{If}}(std::shared\_ptr<Node>\ ifParam)\ :\ ifParam(ifParam)\ \{}
+\DoxyCodeLine{00240\ \ \ \ \ \}}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIf_acc90a8fa5d318383b19e5eeb4985e79e}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00244\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIf_a7addf177113fb00cf35b401815e007bb}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00245\ \};}
+\DoxyCodeLine{00246\ }
+\DoxyCodeLine{00252\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIfParam}{IfParam}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00253\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00254\ \ \ \ \ std::shared\_ptr<Node>\ code;\ \ \ \textcolor{comment}{//\ The\ code\ block\ for\ the\ if\ statement}}
+\DoxyCodeLine{00255\ \ \ \ \ std::shared\_ptr<Node>\ else\_;\ \ \textcolor{comment}{//\ The\ else\ clause}}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00257\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00258\ \ \ \ \ \mbox{\hyperlink{classIfParam_abd885cb7ec5e8a1426f1b2f0f4d50a2d}{IfParam}}(std::shared\_ptr<Node>\ code,\ std::shared\_ptr<Node>\ else\_)\ :\ code(code),\ else\_(else\_)\ \{}
+\DoxyCodeLine{00259\ \ \ \ \ \}}
+\DoxyCodeLine{00260\ }
+\DoxyCodeLine{00261\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIfParam_a1b67bf61ed58bedf7157053a4eb4c3da}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00262\ }
+\DoxyCodeLine{00263\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classIfParam_a898491876a34fc1001c8a899f9172158}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00264\ \};}
+\DoxyCodeLine{00265\ }
+\DoxyCodeLine{00271\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCodeElse}{CodeElse}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classNode}{Node}}\ \{}
+\DoxyCodeLine{00272\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00273\ \ \ \ \ std::shared\_ptr<Node>\ code;\ \ \textcolor{comment}{//\ The\ code\ block\ for\ the\ else\ clause}}
+\DoxyCodeLine{00274\ }
+\DoxyCodeLine{00275\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00276\ \ \ \ \ \mbox{\hyperlink{classCodeElse_af1f9541511c675f8f6929c1b118b901c}{CodeElse}}(std::shared\_ptr<Node>\ code)\ :\ code(code)\ \{}
+\DoxyCodeLine{00277\ \ \ \ \ \}}
+\DoxyCodeLine{00278\ }
+\DoxyCodeLine{00279\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCodeElse_ae6f370fffe9d1ab3a3b0d00d5e4eb502}{gen}}(\mbox{\hyperlink{classGenerator}{Generator}}\&)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00280\ }
+\DoxyCodeLine{00281\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCodeElse_ae5799c5c0b7945a99b5549cb17e1cd4e}{print}}(\textcolor{keywordtype}{int}\ indent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00282\ \};}
+\DoxyCodeLine{00283\ }
+\DoxyCodeLine{00284\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

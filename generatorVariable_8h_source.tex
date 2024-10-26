@@ -1,0 +1,95 @@
+\doxysection{generator\+Variable.\+h}
+\hypertarget{generatorVariable_8h_source}{}\label{generatorVariable_8h_source}\index{/home/silva/meu/BenchGen/src/gen/generator/generatorVariable.h@{/home/silva/meu/BenchGen/src/gen/generator/generatorVariable.h}}
+\mbox{\hyperlink{generatorVariable_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VARIABLEGENERATOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VARIABLEGENERATOR\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{enums_8h}{../shared/enums.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{globalStructs_8h}{../shared/globalStructs.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{varTypes_8h}{../shared/varTypes.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGeneratorVariable}{GeneratorVariable}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGeneratorVariable_a6405b2c851f96a0b9bc609e82e11d9b6}{id}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Unique\ identifier\ for\ the\ variable}}
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ \mbox{\hyperlink{classGeneratorVariable_a34521795d468fdcbfdb49a4157c01743}{name}};\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Name\ of\ the\ variable}}
+\DoxyCodeLine{00021\ \ \ \ \ std::string\ \mbox{\hyperlink{classGeneratorVariable_ad1c1aaa33727679158ccc11a6f1779b8}{typeString}};\ \ \textcolor{comment}{//\ String\ representing\ the\ type\ of\ the\ variable}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classGeneratorVariable_a0491c8d291877ae428bbdef208519f6f}{\string~GeneratorVariable}}()\ \{\}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorVariable_abf1f2554a242ce8b54995d912c3c8e6f}{new\_}}(\textcolor{keywordtype}{bool}\ inFunction\ =\ \textcolor{keyword}{false})\ =\ 0;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorVariable_a3e3b7bf3e80c790fbbda85bb4db8f5e2}{insert}}()\ =\ 0;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorVariable_a89bac8f086552590fb3e99b75e2c46cc}{remove}}()\ =\ 0;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorVariable_a8306f1993822fbf8e3dfabf78986b134}{contains}}(\textcolor{keywordtype}{bool}\ shouldReturn\ =\ \textcolor{keyword}{false})\ =\ 0;}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorVariable_ae1c224716b7abb7741bac955632d3ffb}{free}}()\ =\ 0;}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorVariable_a007c2bd0773b039fb39da0dc2e94c498}{genIncludes}}()\ =\ 0;}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorVariable_ae0da32bb62355d1e26ef8f035d3e0599}{genGlobalVars}}()\ =\ 0;}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorVariable_a035e45819a3108032c59efdcc535d4bc}{genParams}}(std::string\ paramName,\ std::vector<GeneratorVariable*>\ varsParams)\ =\ 0;}
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGeneratorSortedList}{GeneratorSortedList}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classGeneratorVariable}{GeneratorVariable}}\ \{}
+\DoxyCodeLine{00108\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{classGeneratorSortedList_a1f83b390f519de7109677aa2fd7b4c71}{GeneratorSortedList}}()\ \{\};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \mbox{\hyperlink{classGeneratorSortedList_a1f83b390f519de7109677aa2fd7b4c71}{GeneratorSortedList}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{classGeneratorSortedList_a50623ec240736ccde661ab8757320fd3}{\string~GeneratorSortedList}}();}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorSortedList_ab69a34c60931660995466f3ed0ea3da9}{new\_}}(\textcolor{keywordtype}{bool}\ inFunction\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00116\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorSortedList_ae9d9596f96930cb42d7dec87b483b9d3}{insert}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00117\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorSortedList_aeb33c7e0d4f79515f793936bf9542ab6}{remove}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00118\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorSortedList_a7b57d1967290e292d901b4944fe21142}{contains}}(\textcolor{keywordtype}{bool}\ shouldReturn\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00119\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorSortedList_aabd88de935470fa3e42cfd2d918b4e9b}{free}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00120\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorSortedList_a8fb6f0ecd8b9e082c4674436fe0f0af3}{genIncludes}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00121\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorSortedList_af0e2c6c3b5b1b609411bd3a9cf381a97}{genGlobalVars}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00122\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorSortedList_a882bb5982acc361d34c0d87ceb1b4bcd}{genParams}}(std::string\ paramName,\ std::vector<GeneratorVariable*>\ varsParams)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00123\ \};}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00130\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGeneratorArray}{GeneratorArray}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classGeneratorVariable}{GeneratorVariable}}\ \{}
+\DoxyCodeLine{00131\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGeneratorArray_ab5daa04dd4b60fdf2dd96f690c03dcf1}{totalSize}};\ \ \textcolor{comment}{//\ The\ total\ size\ of\ the\ array}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00137\ \ \ \ \ \mbox{\hyperlink{classGeneratorArray_a8dc51c99a866c846561129190c7a8895}{GeneratorArray}}()\ \{\};}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00146\ \ \ \ \ \mbox{\hyperlink{classGeneratorArray_a8dc51c99a866c846561129190c7a8895}{GeneratorArray}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGeneratorArray_ab5daa04dd4b60fdf2dd96f690c03dcf1}{totalSize}},\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00151\ \ \ \ \ \mbox{\hyperlink{classGeneratorArray_a74611600d14babfb4146ac164616feb6}{\string~GeneratorArray}}();}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorArray_a81aeae301d1e41f3b4cce55dd8618bd2}{new\_}}(\textcolor{keywordtype}{bool}\ inFunction\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00154\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorArray_a88cb67d5982db27a9c506c550788b8e2}{insert}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00155\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorArray_aa60c8fc31facc4b6595170d8f0e569b0}{remove}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00156\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorArray_ab8434d2fcac2e2f6ec64ffac10245b72}{contains}}(\textcolor{keywordtype}{bool}\ shouldReturn\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00157\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorArray_a9460ccd8df116671ef92746cab57ee87}{free}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00158\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorArray_a892eeef354e2e215e7f5951e63a51cee}{genIncludes}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00159\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorArray_a3136e4a9ca199a65f4d98efd43df13ab}{genGlobalVars}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00160\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorArray_a49db27689ca1881fed6019aa5e5950e9}{genParams}}(std::string\ paramName,\ std::vector<GeneratorVariable*>\ varsParams)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00161\ \};}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00169\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classVariableFactory}{VariableFactory}}\ \{}
+\DoxyCodeLine{00170\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classVariableFactory_af6b7cc9304151741e6224b10da60fa28}{var\_counter}};}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classGeneratorVariable}{GeneratorVariable}}*\ \mbox{\hyperlink{classVariableFactory_af607605b85e90c5235f8063326b84156}{createVariable}}(std::string\ type,\ \textcolor{keywordtype}{int}\ identifier);}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keyword}{static}\ std::string\ \mbox{\hyperlink{classVariableFactory_ad968ac7b1799646d775b5c634f45fb02}{genTypeString}}(std::string\ type);}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00204\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<std::string>\ \mbox{\hyperlink{classVariableFactory_ac7bfa2657b320091c6fa971410dd23aa}{genIncludes}}(std::string\ type);}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00214\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<std::string>\ \mbox{\hyperlink{classVariableFactory_a52d2e0b1ca13487c550bfe97637fc71b}{genGlobalVars}}(std::string\ type);}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00227\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<std::string>\ \mbox{\hyperlink{classVariableFactory_ac9ab37c835c46e57368de9986df782ae}{genParams}}(std::string\ type,\ std::string\ paramName,\ std::vector<GeneratorVariable*>\ varsParams);}
+\DoxyCodeLine{00228\ \};}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,29 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classNode.html" title="Base class for all nodes in the abstract syntax tree (AST)." alt="" coords="5,317,61,345"/>
+<area shape="rect" id="Node000001" href="$classCall.html" title="Represents a function call in the AST." alt="" coords="147,5,193,33"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="31,301,34,248,45,180,68,109,85,75,107,44,125,30,145,22,147,26,128,34,111,48,89,78,73,111,50,181,40,249,37,302"/>
+<area shape="rect" id="Node000002" href="$classCodeElse.html" title="Represents an else clause with a code block in the AST." alt="" coords="129,57,210,85"/>
+<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="33,302,39,258,52,203,73,147,88,120,107,96,127,81,130,85,111,100,93,123,78,149,57,205,44,259,39,303"/>
+<area shape="rect" id="Node000003" href="$classContains.html" title="Represents a contains operation in the AST." alt="" coords="131,109,209,137"/>
+<area shape="poly" id="edge5_Node000000_Node000003" title=" " alt="" coords="37,302,45,267,59,226,79,185,107,148,129,133,132,137,111,152,84,188,64,229,50,269,42,303"/>
+<area shape="rect" id="Node000004" href="$classId.html" title="Represents an identifier in the AST." alt="" coords="151,161,189,189"/>
+<area shape="poly" id="edge6_Node000000_Node000004" title=" " alt="" coords="42,301,67,251,85,224,107,200,128,186,149,178,151,183,130,191,110,204,89,227,72,253,47,304"/>
+<area shape="rect" id="Node000005" href="$classIf.html" title="Represents an if statement in the AST." alt="" coords="151,213,189,241"/>
+<area shape="poly" id="edge7_Node000000_Node000005" title=" " alt="" coords="53,304,77,277,107,252,149,231,151,236,110,256,81,281,56,307"/>
+<area shape="rect" id="Node000006" href="$classIfParam.html" title="Represents the parameters of an if statement in the AST." alt="" coords="134,265,206,293"/>
+<area shape="poly" id="edge8_Node000000_Node000006" title=" " alt="" coords="74,313,133,290,135,295,76,318"/>
+<area shape="rect" id="Node000007" href="$classInsert.html" title="Represents an insert operation in the AST." alt="" coords="141,317,199,345"/>
+<area shape="poly" id="edge9_Node000000_Node000007" title=" " alt="" coords="76,328,140,328,140,334,76,334"/>
+<area shape="rect" id="Node000008" href="$classLambdaCode.html" title="Represents a lambda expression in the AST." alt="" coords="117,369,223,397"/>
+<area shape="poly" id="edge10_Node000000_Node000008" title=" " alt="" coords="76,344,132,366,130,371,74,349"/>
+<area shape="rect" id="Node000009" href="$classLoop.html" title="Represents a loop in the AST." alt="" coords="144,421,196,449"/>
+<area shape="poly" id="edge11_Node000000_Node000009" title=" " alt="" coords="56,355,81,381,110,406,145,424,142,429,107,411,77,385,53,359"/>
+<area shape="rect" id="Node000010" href="$classNew.html" title="Represents a new variable creation in the AST." alt="" coords="145,473,195,501"/>
+<area shape="poly" id="edge12_Node000000_Node000010" title=" " alt="" coords="47,359,72,409,89,435,110,458,127,470,145,478,143,483,125,475,107,463,85,439,67,412,42,361"/>
+<area shape="rect" id="Node000011" href="$classRemove.html" title="Represents a remove operation in the AST." alt="" coords="132,525,208,553"/>
+<area shape="poly" id="edge13_Node000000_Node000011" title=" " alt="" coords="42,360,50,394,64,434,84,475,111,511,133,526,130,530,107,514,79,477,59,436,45,395,37,361"/>
+<area shape="rect" id="Node000012" href="$classSeq.html" title="Represents a sequence of operations in the AST." alt="" coords="147,577,192,605"/>
+<area shape="poly" id="edge14_Node000000_Node000012" title=" " alt="" coords="39,360,44,403,57,457,78,513,93,539,111,563,128,576,148,584,146,589,126,580,107,566,88,542,73,515,52,459,39,404,33,360"/>
+<area shape="rect" id="Node000013" href="$classStatementCode.html" title="Represents a block of statements in the AST." alt="" coords="109,629,231,657"/>
+<area shape="poly" id="edge15_Node000000_Node000013" title=" " alt="" coords="37,361,40,414,50,481,73,552,89,585,111,615,126,627,122,631,107,618,85,588,68,554,45,482,34,414,31,361"/>
+</map>

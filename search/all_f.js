@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['_7earray_151',['~Array',['../classArray.html#abcabe567f41f7798d2f97babcc443c6f',1,'Array']]],
-  ['_7egenerator_152',['~Generator',['../classGenerator.html#acc85fbe22690003267ba899bacf777d1',1,'Generator']]],
-  ['_7egeneratorfunction_153',['~GeneratorFunction',['../classGeneratorFunction.html#a80f779a8652e0fd298d82f86b115e9f4',1,'GeneratorFunction']]],
-  ['_7egeneratorscope_154',['~GeneratorScope',['../classGeneratorScope.html#aa630e1a983ff105e5ff30c8a5bbef064',1,'GeneratorScope']]],
-  ['_7egeneratorvariable_155',['~GeneratorVariable',['../classGeneratorVariable.html#a0491c8d291877ae428bbdef208519f6f',1,'GeneratorVariable']]],
-  ['_7enode_156',['~Node',['../classNode.html#abce703f211f6a577085b4b8ad68cbb19',1,'Node']]]
+  ['var_5fcounter_0',['var_counter',['../classVariableFactory.html#af6b7cc9304151741e6224b10da60fa28',1,'VariableFactory']]],
+  ['varcounter_1',['varCounter',['../classGenerator.html#ad11cf008479d85cad8dde1a502a714b6',1,'Generator']]],
+  ['variablefactory_2',['VariableFactory',['../classVariableFactory.html',1,'']]],
+  ['variables_3',['variables',['../classGenerator.html#ab8865afc41af5096f31efab1de1f99ae',1,'Generator']]],
+  ['vartype_4',['varType',['../classGenerator.html#a879c5349bc03a52f947ae824189ce8e0',1,'Generator']]],
+  ['vartypes_5',['VarTypes',['../classVarTypes.html',1,'']]],
+  ['vartypes_2eh_6',['varTypes.h',['../varTypes_8h.html',1,'']]]
 ];

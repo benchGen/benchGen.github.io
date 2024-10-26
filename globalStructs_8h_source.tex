@@ -1,0 +1,54 @@
+\doxysection{global\+Structs.\+h}
+\hypertarget{globalStructs_8h_source}{}\label{globalStructs_8h_source}\index{/home/silva/meu/BenchGen/src/gen/shared/globalStructs.h@{/home/silva/meu/BenchGen/src/gen/shared/globalStructs.h}}
+\mbox{\hyperlink{globalStructs_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GLOBALSTRUCTS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GLOBALSTRUCTS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <tuple>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{globalIncludes_8h}{globalIncludes.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structLexerRule}{LexerRule}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structLexerRule_aa10cadbfd76a06590f33efdd16cb11a2}{type}};\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Type\ of\ the\ lexer\ rule}}
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ \mbox{\hyperlink{structLexerRule_a4c7dad4ff65f513daa7af373a4f9fe05}{regex}};\ \ \textcolor{comment}{//\ Regular\ expression\ defining\ the\ rule}}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structToken}{Token}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structToken_ae46b6b806df89709a13a14dc76c86623}{type}};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Type\ of\ the\ token}}
+\DoxyCodeLine{00023\ \ \ \ \ std::string\ \mbox{\hyperlink{structToken_af992ca6fb756dfdfb4cd474ef8fb6e9d}{text}};\ \ \textcolor{comment}{//\ Text\ content\ of\ the\ token}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structToken_a20c14983ac6c11ffb89135e2cd91169f}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structToken}{Token}}\&\ other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::tie(\mbox{\hyperlink{structToken_ae46b6b806df89709a13a14dc76c86623}{type}},\ \mbox{\hyperlink{structToken_af992ca6fb756dfdfb4cd474ef8fb6e9d}{text}})\ ==\ std::tie(other.\mbox{\hyperlink{structToken_ae46b6b806df89709a13a14dc76c86623}{type}},\ other.\mbox{\hyperlink{structToken_af992ca6fb756dfdfb4cd474ef8fb6e9d}{text}});}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structTokenVectorHash}{TokenVectorHash}}\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{structTokenVectorHash_a7bb0e5c00452c15935b27e9d52ed7982}{operator()}}(\textcolor{keyword}{const}\ std::vector<Token>\&\ t)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ seed\ =\ t.size();}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ i\ :\ t)\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ h1\ =\ std::hash<int>\{\}(i.type);}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ h2\ =\ std::hash<std::string>\{\}(i.text);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ seedo\ =\ h1\ \string^\ (h2\ <<\ 1);}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ seed\ \string^=\ seedo;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ seed;}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structTokenVectorEqual}{TokenVectorEqual}}\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structTokenVectorEqual_a719bb06aee8a1d7d0f29dae53f7f3ef4}{operator()}}(\textcolor{keyword}{const}\ std::vector<Token>\&\ t1,\ \textcolor{keyword}{const}\ std::vector<Token>\&\ t2)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ t1\ ==\ t2;}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ \};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00083\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structProductionRule}{ProductionRule}}\ \{}
+\DoxyCodeLine{00084\ \ \ \ \ std::string\ \mbox{\hyperlink{structProductionRule_a3d7a05f6627517a5ea1b9645c04566b7}{rule}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ name\ or\ identifier\ of\ the\ production\ rule}}
+\DoxyCodeLine{00085\ \ \ \ \ std::vector<Token>\ \mbox{\hyperlink{structProductionRule_aa99031d3ed92dcc4ef6676be49df7c0c}{production}};\ \ \textcolor{comment}{//\ The\ sequence\ of\ Tokens\ that\ defines\ the\ production}}
+\DoxyCodeLine{00086\ \};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

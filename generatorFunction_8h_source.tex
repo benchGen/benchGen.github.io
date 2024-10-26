@@ -1,0 +1,35 @@
+\doxysection{generator\+Function.\+h}
+\hypertarget{generatorFunction_8h_source}{}\label{generatorFunction_8h_source}\index{/home/silva/meu/BenchGen/src/gen/generator/generatorFunction.h@{/home/silva/meu/BenchGen/src/gen/generator/generatorFunction.h}}
+\mbox{\hyperlink{generatorFunction_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GENERATORFUNCTION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GENERATORFUNCTION\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{enums_8h}{../shared/enums.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{globalStructs_8h}{../shared/globalStructs.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGeneratorFunction}{GeneratorFunction}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ id;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ unique\ identifier\ for\ this\ function}}
+\DoxyCodeLine{00016\ \ \ \ \ std::vector<std::string>\ lines;\ \ \textcolor{comment}{//\ The\ lines\ of\ code\ that\ make\ up\ the\ function}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGeneratorFunction_a181cf100289d3eef29f9615e4cb57926}{insertBack}}\ =\ \textcolor{keyword}{false};\ \ \textcolor{comment}{//\ Flag\ to\ determine\ where\ to\ insert\ new\ lines\ in\ the\ function}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{classGeneratorFunction_a0be26df5184d280ac63547febc909844}{GeneratorFunction}}()\ \{\}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{classGeneratorFunction_afec8b78ed683aba8cd39e37b7ce963f9}{GeneratorFunction}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ :\ id(id)\ \{\}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classGeneratorFunction_a80f779a8652e0fd298d82f86b115e9f4}{\string~GeneratorFunction}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGeneratorFunction_a8835107e6cb54762c0a98fa65e508c8b}{getId}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classGeneratorFunction_aebd924ef28a55e784e1b3245f7faa168}{getLines}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeneratorFunction_ae83a47ea85a6dfd7c92c2682e11ebe92}{addLine}}(std::string);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeneratorFunction_ae83a47ea85a6dfd7c92c2682e11ebe92}{addLine}}(std::vector<std::string>);}
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

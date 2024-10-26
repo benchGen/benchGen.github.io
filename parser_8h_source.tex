@@ -1,0 +1,50 @@
+\doxysection{parser.\+h}
+\hypertarget{parser_8h_source}{}\label{parser_8h_source}\index{/home/silva/meu/BenchGen/src/gen/parser/parser.h@{/home/silva/meu/BenchGen/src/gen/parser/parser.h}}
+\mbox{\hyperlink{parser_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PARSER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PARSER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stack>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ast_8h}{../ast/ast.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{generator_8h}{../generator/generator.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{enums_8h}{../shared/enums.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{globalStructs_8h}{../shared/globalStructs.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classParser}{Parser}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ tokenIndex;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Index\ of\ the\ current\ token\ being\ processed}}
+\DoxyCodeLine{00024\ \ \ \ \ std::vector<Token>\ tokens;\ \ \ \ \ \ \textcolor{comment}{//\ Vector\ holding\ the\ sequence\ of\ tokens\ to\ be\ parsed}}
+\DoxyCodeLine{00025\ \ \ \ \ std::shared\_ptr<Node>\ AST;\ \ \ \ \ \ \textcolor{comment}{//\ The\ root\ of\ the\ abstract\ syntax\ tree\ (AST)}}
+\DoxyCodeLine{00026\ \ \ \ \ std::stack<Call*>\ currentCall;\ \ \textcolor{comment}{//\ Stack\ to\ track\ the\ number\ of\ conditionals\ within\ a\ function\ call,\ enabling\ accurate\ counting\ of\ PATH\ parameters\ for\ that\ function.}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ match(\textcolor{keywordtype}{int}\ symbol);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ std::shared\_ptr<Node>\ parse\_CODE();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ std::shared\_ptr<Node>\ parse\_STATEMENT();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \ \ std::shared\_ptr<Node>\ parse\_IFPARAM();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ \ \ std::shared\_ptr<Node>\ parse\_ELSE();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{classParser_a12234f6cd36b61af4b50c94a179422c1}{Parser}}()\ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ tokenIndex\ =\ 0;}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ AST\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ currentCall\ =\ std::stack<Call*>();}
+\DoxyCodeLine{00073\ \ \ \ \ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classParser_aebcb46b783b42009df934b77d76de7fb}{setTokens}}(std::vector<Token>\ \_tokens);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classParser_ad941a297e9f6abb39271090806a6be33}{parse}}();}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00099\ \ \ \ \ std::shared\_ptr<Node>\ \mbox{\hyperlink{classParser_afa00b50d9ef4bd331ee09825fcedcf44}{getAST}}();}
+\DoxyCodeLine{00100\ \};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

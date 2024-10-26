@@ -1,0 +1,82 @@
+\doxysection{generator.\+h}
+\hypertarget{generator_8h_source}{}\label{generator_8h_source}\index{/home/silva/meu/BenchGen/src/gen/generator/generator.h@{/home/silva/meu/BenchGen/src/gen/generator/generator.h}}
+\mbox{\hyperlink{generator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GENERATOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GENERATOR\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{enums_8h}{../shared/enums.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{globalStructs_8h}{../shared/globalStructs.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{varTypes_8h}{../shared/varTypes.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{generatorFunction_8h}{generatorFunction.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{generatorScope_8h}{generatorScope.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{generatorVariable_8h}{generatorVariable.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGenerator}{Generator}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ std::vector<std::string>\ includes;\ \ \ \ \textcolor{comment}{//\ List\ of\ include\ statements\ for\ the\ generated\ code}}
+\DoxyCodeLine{00023\ \ \ \ \ std::vector<std::string>\ globalVars;\ \ \textcolor{comment}{//\ List\ of\ global\ variable\ declarations}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ generateIncludes();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ generateGlobalVars();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ generateMainFunction();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ generateRandomNumberGenerator();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00060\ \ \ \ \ std::string\ createParams();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ genMakefile(std::string\ dir,\ std::string\ target);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{classGeneratorFunction}{GeneratorFunction}}\ \mbox{\hyperlink{classGenerator_a8821eabb4243b77d75448c344a84f994}{mainFunction}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Main\ function\ for\ the\ generated\ program}}
+\DoxyCodeLine{00074\ \ \ \ \ std::list<GeneratorFunction>\ \mbox{\hyperlink{classGenerator_a9ee62e0f655e8c492c83f2aeec5f54e1}{functions}};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ List\ of\ all\ functions\ in\ the\ generated\ program}}
+\DoxyCodeLine{00075\ \ \ \ \ std::stack<GeneratorFunction*>\ \mbox{\hyperlink{classGenerator_a7534ce47b9618c0d0c39d1e66e1b4f96}{currentFunction}};\ \ \textcolor{comment}{//\ Stack\ of\ current\ functions\ being\ generated}}
+\DoxyCodeLine{00076\ \ \ \ \ std::stack<int>\ \mbox{\hyperlink{classGenerator_a2c4764349aba7f302eb7ca2d155837f6}{ifCounter}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Counter\ for\ managing\ nested\ if\ statements}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGenerator_ad11cf008479d85cad8dde1a502a714b6}{varCounter}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Counter\ for\ variables}}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGenerator_a4b6101ecf351a3ddb458a70e3ac915e4}{loopLevel}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Current\ nesting\ level\ of\ loops}}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGenerator_ae81d7f270043bbc6cb75ea3a7f33750a}{loopCounter}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Counter\ for\ loop\ iterations}}
+\DoxyCodeLine{00080\ \ \ \ \ std::string\ \mbox{\hyperlink{classGenerator_a879c5349bc03a52f947ae824189ce8e0}{varType}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Type\ of\ variables\ to\ use\ in\ the\ generated\ code}}
+\DoxyCodeLine{00081\ \ \ \ \ std::map<int,\ GeneratorVariable*>\ \mbox{\hyperlink{classGenerator_ab8865afc41af5096f31efab1de1f99ae}{variables}};\ \ \ \ \ \textcolor{comment}{//\ Map\ of\ variables\ by\ their\ ID}}
+\DoxyCodeLine{00082\ \ \ \ \ std::stack<GeneratorScope>\ \mbox{\hyperlink{classGenerator_a6ae34b5a0449b6f8cfa16e2fa5eeedc2}{currentScope}};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Stack\ of\ current\ scopes}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{classGenerator_a2d1c204d02c3c3e000e870758e8b40b5}{Generator}}(std::string\ variableType);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{classGenerator_acc85fbe22690003267ba899bacf777d1}{\string~Generator}}()\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ vpair\ :\ \mbox{\hyperlink{classGenerator_ab8865afc41af5096f31efab1de1f99ae}{variables}})\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ vpair.second;}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00103\ \ \ \ \ \}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGenerator_a2bd8c5ad46d91923eaadf326a4d348ee}{addLine}}(std::string,\ \textcolor{keywordtype}{int}\ =\ 0);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGenerator_a2bd8c5ad46d91923eaadf326a4d348ee}{addLine}}(std::vector<std::string>,\ \textcolor{keywordtype}{int}\ =\ 0);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGenerator_a518129dac59a52b195b666bb15c2c3c5}{startScope}}();}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGenerator_ae23df309fb6c74441f5b054e8368180f}{startFunc}}(\textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGenerator_a3e83eefd33040973b44e3e96901e0353}{functionExists}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGenerator_af1a3b958599cb38d0dcd0f620e5a4cf5}{callFunc}}(\textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGenerator_a3ddf4df7e603baa56607f3cbefecda6f}{addVar}}(std::string);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGenerator_af576c36b6e58b55322a0d3ac7c3712b1}{freeVars}}(\textcolor{keywordtype}{bool}\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{int}\ =\ 0);}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGenerator_ac75a69518db1e431662b1e891d455942}{returnFunc}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGenerator_ac873bbde78af069271060d1a7ef2b6de}{endScope}}();}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGenerator_ac2dcabf409a700b0f1b2618b50682a25}{endFunc}}();}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGenerator_af1e66c6712829de03afb5ea7ed98c131}{generateFiles}}(std::string);}
+\DoxyCodeLine{00207\ \};}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00209\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

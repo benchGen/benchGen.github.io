@@ -1,0 +1,5 @@
+<map id="Remove" name="Remove">
+<area shape="rect" id="Node000001" title="Represents a remove operation in the AST." alt="" coords="5,81,81,109"/>
+<area shape="rect" id="Node000002" href="$classNode.html" title="Base class for all nodes in the abstract syntax tree (AST)." alt="" coords="15,5,71,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,49,46,81,40,81,40,49"/>
+</map>
