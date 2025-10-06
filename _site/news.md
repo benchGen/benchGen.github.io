@@ -10,7 +10,7 @@
 
 [see post](https://www.linkedin.com/posts/compilers-lab_vinicius-silva-viniciusilvaieeeorg-and-activity-7379876088342020096-2v-f?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-<img src="https://media.licdn.com/dms/image/v2/D4D22AQHh5yxZzBMTgA/feedshare-shrink_800/B4DZmqWMXpJEAg-/0/1759499569467?e=1762387200&v=beta&t=ez7e3QWCgfOJQ6ypCyn28kTqZK4BPUhMLrF8HndFHUs">
+<img src="./images/1759499569467.jpeg">
 
 ---
 
@@ -18,7 +18,7 @@
 
 [see post](https://www.linkedin.com/posts/compilers-lab_compiler-programming-fractal-activity-7373684878262841344-Axz7?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-<img src="https://media.licdn.com/dms/image/v2/D4D22AQFsp71j6NLzhQ/feedshare-shrink_800/B4DZlSXUmlIEAg-/0/1758023470487?e=1762387200&v=beta&t=oN0tr0FEELEoLrHV4_Itu094VuwRfPisoynTstWVFcg">
+<img src="./images/1758023470487.jpeg">
 
 ---
 
@@ -26,7 +26,7 @@
 
 [see post](https://www.linkedin.com/posts/compilers-lab_compilers-programming-education-activity-7349350324861595649-lNqh?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-<img src="https://media.licdn.com/dms/image/v2/D4D22AQF6aTRbFA4fyA/feedshare-shrink_800/B4DZf4jK.mG8Ak-/0/1752221661023?e=1762387200&v=beta&t=HLw8ipAkP86zwb9VgmFCtyfM7ai-Wec8PhODuttvhrk">
+<img src="./images/1752221661023.jpeg">
 
 ---
 
@@ -34,7 +34,7 @@
 
 [see post](https://www.linkedin.com/posts/compilers-lab_programming-compiler-fractal-activity-7339717382224973825-nQEp?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-<img src="https://media.licdn.com/dms/image/v2/D4D22AQHagD8IBm5vLA/feedshare-shrink_800/B4DZdvqDy6GgBk-/0/1749924988335?e=1762387200&v=beta&t=BFciwk0aOzGCXPVGbAgncl9cWMf_m-ObMIDVEGQShZA">
+<img src="./images/1749924988335.jpeg">
 
 ---
 
@@ -42,14 +42,14 @@
 
 [see post](https://www.linkedin.com/posts/compilers-lab_if-you-compare-gcc-5-april-2015-to-gcc-activity-7336481822442205184-gVx3?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-<img src="https://media.licdn.com/dms/image/v2/D4D22AQHPzl3LDGaL-g/feedshare-shrink_800/B4DZdBrVljHMAg-/0/1749153570604?e=1762387200&v=beta&t=cogoqIBhh9ol3ZB2jFOgn87RS0cj5dPuJHHVlAuCJfE" width="700" height="400">
+<img src="./images/1749153570604.jpeg" width="700" height="400">
 ---
 
 ### BenchGen: Fractal-Based Program Generator
 
 [see post](https://www.linkedin.com/posts/compilers-lab_benchgen-is-a-benchmark-generator-that-uses-activity-7332796843174588417-sqqA?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-<img src="https://media.licdn.com/dms/image/v2/D4D22AQHIcUSxZTdpQA/feedshare-shrink_800/B4DZcNT31DGYAg-/0/1748275003418?e=1762387200&v=beta&t=nMUiTJ4YJxIjoINV0GzFveIOdaNqDBoDTRtEnv2WzrI" width="700" height="400">
+<img src="./images/1748275003418.jpeg" width="700" height="400">
 
 ---
 
@@ -57,7 +57,7 @@
 
 [see post](https://www.linkedin.com/posts/compilers-lab_theory-programming-compiler-activity-7326285792224456704-szta?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-<img src="https://media.licdn.com/dms/image/v2/D4D22AQHvVXGP3nMieg/feedshare-shrink_2048_1536/B4DZawyGLWHAAo-/0/1746722647435?e=1762387200&v=beta&t=3gZ1FGcqZ-I_F0hVoeUbjuJj3ANfBX2a9jvYEBpB7vI" width="700" height="400">
+<img src="./images/1746722647435.jpeg" width="700" height="400">
 
 
 ---
@@ -66,7 +66,7 @@
 
 [see post](https://www.linkedin.com/posts/compilers-lab_compilers-clang-gcc-activity-7310325694117388288-QPYp?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-<img src="https://media.licdn.com/dms/image/v2/D4D22AQHoQ6HTvIc76g/feedshare-shrink_800/B4DZXN.edeHIAg-/0/1742917463147?e=1762387200&v=beta&t=gtAq12Vf4fpxS9YO--AhtUUU4H4nvLtA3PLS8ig2gEs" alt="Descrição da imagem" width="700" height="400">
+<img src="./images/1742917463147.jpeg" alt="Descrição da imagem" width="700" height="400">
 
 ---
 
@@ -74,7 +74,7 @@
 
 [see post](https://www.linkedin.com/posts/compilers-lab_breaking-news-students-from-ufmgs-compilers-activity-7255264752136798208-kdTH?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-<img src="https://media.licdn.com/dms/image/v2/D4D22AQG1acaq-mEV0g/feedshare-shrink_800/feedshare-shrink_800/0/1729789911667?e=1762387200&v=beta&t=UpmV3nxXRt36id063KvHpW7x_qbSw743nvGLMkkDjRs" alt="Descrição da imagem" width="700" height="400">
+<img src="./images/1729789911667.jpeg" alt="Descrição da imagem" width="700" height="400">
 
 ---
 
