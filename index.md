@@ -21,21 +21,27 @@
 ### Installing and Running:
 After cloning the repository, you can build the project by running the `make` command in the `src/gen` directory. Notice that clang++ is used as the default compiler.
 
+To run BenchGen, you need to provide the following five parameters: An example of usage is:
+
+#### Run in alpha version:
+
 ```bash
-git clone https://github.com/lac-dcc/BenchGen.git
+git clone --branch v1.0.0-alpha https://github.com/lac-dcc/BenchGen.git
 cd src/gen
 make
 ```
-
-To run BenchGen, you need to provide the following five parameters: An example of usage is:
-
-#### Run Alpha version:
 
 ```bash
 ./benchGen 1 productionRule.txt seedString.txt myProgram array
 ```
 
-#### Run Beta version:
+#### Run in beta version:
+
+```bash
+git clone --branch v1.0.0-beta https://github.com/lac-dcc/BenchGen.git
+cd src/gen
+make
+```
 
 ```bash
 ./benchGen 1 productionRule.txt seedString.txt myProgram array programmingLanguage
