@@ -63,6 +63,13 @@ See more: [here](https://github.com/lac-dcc/BenchGen/blob/main/README.md#buildin
 
 * <p style="text-align:justify;">To contribute to the alpha version of BenchGen, we have open <a href="https://github.com/lac-dcc/BenchGen/issues">issues</a> where you can help us make BenchGen even better.</p>
 
+* <p style="text-align:justify;">You can also report bugs by opening an issue <a href="https://github.com/lac-dcc/BenchGen/issues/new">here</a>.</p>
+
+<a target="_blank" 
+   style="display: inline-flex; align-items: center; padding: 5px 10px; 
+          background-color: #24292e; color: #fff; text-decoration: none; 
+          border-radius: 5px; font-weight: bold; font-family: sans-serif;" href="https://github.com/lac-dcc/BenchGen/fork"><img src="./images/code-fork-symbol.png" alt="Descrição da imagem" width="20" height="20">&nbsp;Fork on GitHub</a>
+
 ---
 
 ### Team
