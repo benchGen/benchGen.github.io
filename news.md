@@ -1,159 +1,117 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"> -->
-<!--     <link rel="icon" type="image/png" sizes="32x32" href="https://www.colorcombos.com/colors/660033"> -->
-    <title>BenchGen</title>
+## News
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Blog | BenchGen</title>
-<meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Blog" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="&lt;p style=&quot;text-align:justify;&quot;&gt;The BenchGen project aims to synthesize programs that are sufficiently expressive to stress-test computing systems, such as operating systems, compiler optimizations, memory allocation libraries and even computer architectures.&lt;p&gt;" />
-<meta property="og:description" content="&lt;p style=&quot;text-align:justify;&quot;&gt;The BenchGen project aims to synthesize programs that are sufficiently expressive to stress-test computing systems, such as operating systems, compiler optimizations, memory allocation libraries and even computer architectures.&lt;p&gt;" />
-<link rel="canonical" href="http://localhost:4000/blog.html" />
-<meta property="og:url" content="http://localhost:4000/blog.html" />
-<meta property="og:site_name" content="BenchGen" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Blog" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"&lt;p style=&quot;text-align:justify;&quot;&gt;The BenchGen project aims to synthesize programs that are sufficiently expressive to stress-test computing systems, such as operating systems, compiler optimizations, memory allocation libraries and even computer architectures.&lt;p&gt;","headline":"Blog","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/BenchGenLogo.png?raw=true"}},"url":"http://localhost:4000/blog.html"}</script>
-<!-- End Jekyll SEO tag -->
+---
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=7385608bfb9cfcc069f382bf3d715bba94bdea7f">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-     <style>
-      /* 🔹 Navbar horizontal no topo */
-      body {
-        margin: 0;
-        font-family: "Segoe UI", sans-serif;
-        color: #222;
-      }
+<img src="./images/linkedin.png" width="20" height="20">
 
-      nav {
-        width: 100%;
-        background-color: #2f2f2f; /* cinza grafite */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        padding: 1rem 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      }
+---
 
-      nav a {
-        color: #f0f0f0;
-        text-decoration: none;
-        font-weight: 600;
-        padding: 0.5rem 1rem;
-        transition: background-color 0.3s, transform 0.2s;
-      }
+### Request for Feedback
 
-      nav a:hover {
-        background-color: #3b3b3b;
-        border-radius: 4px;
-        transform: scale(1.05);
-      }
+[see post](https://www.linkedin.com/posts/compilers-lab_vinicius-silva-viniciusilvaieeeorg-and-activity-7379876088342020096-2v-f?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-      /* Conteúdo abaixo da navbar */
-      .content {
-        padding: 6rem 2rem 2rem 2rem; /* topo = altura da navbar + margem */
-      }
+<img src="https://media.licdn.com/dms/image/v2/D4D22AQHh5yxZzBMTgA/feedshare-shrink_800/B4DZmqWMXpJEAg-/0/1759499569467?e=1762387200&v=beta&t=ez7e3QWCgfOJQ6ypCyn28kTqZK4BPUhMLrF8HndFHUs">
 
-      /* Responsividade */
-      @media (max-width: 600px) {
-        nav {
-          flex-direction: column;
-          gap: 0.5rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
+---
+
+### A comparison of different programming languages using BenchGen
+
+[see post](https://www.linkedin.com/posts/compilers-lab_compiler-programming-fractal-activity-7373684878262841344-Axz7?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
+
+<img src="https://media.licdn.com/dms/image/v2/D4D22AQFsp71j6NLzhQ/feedshare-shrink_800/B4DZlSXUmlIEAg-/0/1758023470487?e=1762387200&v=beta&t=oN0tr0FEELEoLrHV4_Itu094VuwRfPisoynTstWVFcg">
+
+---
+
+### Relationship between compilation time and execution time using BenchGen
+
+[see post](https://www.linkedin.com/posts/compilers-lab_compilers-programming-education-activity-7349350324861595649-lNqh?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
+
+<img src="https://media.licdn.com/dms/image/v2/D4D22AQF6aTRbFA4fyA/feedshare-shrink_800/B4DZf4jK.mG8Ak-/0/1752221661023?e=1762387200&v=beta&t=HLw8ipAkP86zwb9VgmFCtyfM7ai-Wec8PhODuttvhrk">
+
+---
+
+### BenchGen technical report
+
+[see post](https://www.linkedin.com/posts/compilers-lab_programming-compiler-fractal-activity-7339717382224973825-nQEp?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
+
+<img src="https://media.licdn.com/dms/image/v2/D4D22AQHagD8IBm5vLA/feedshare-shrink_800/B4DZdvqDy6GgBk-/0/1749924988335?e=1762387200&v=beta&t=BFciwk0aOzGCXPVGbAgncl9cWMf_m-ObMIDVEGQShZA">
+
+---
+
+### An evolution of GCC across different versions
+
+[see post](https://www.linkedin.com/posts/compilers-lab_if-you-compare-gcc-5-april-2015-to-gcc-activity-7336481822442205184-gVx3?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
+
+<img src="https://media.licdn.com/dms/image/v2/D4D22AQHPzl3LDGaL-g/feedshare-shrink_800/B4DZdBrVljHMAg-/0/1749153570604?e=1762387200&v=beta&t=cogoqIBhh9ol3ZB2jFOgn87RS0cj5dPuJHHVlAuCJfE" width="700" height="400">
+---
+
+### BenchGen: Fractal-Based Program Generator
+
+[see post](https://www.linkedin.com/posts/compilers-lab_benchgen-is-a-benchmark-generator-that-uses-activity-7332796843174588417-sqqA?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
+
+<img src="https://media.licdn.com/dms/image/v2/D4D22AQHIcUSxZTdpQA/feedshare-shrink_800/B4DZcNT31DGYAg-/0/1748275003418?e=1762387200&v=beta&t=nMUiTJ4YJxIjoINV0GzFveIOdaNqDBoDTRtEnv2WzrI" width="700" height="400">
+
+---
+
+### Comparison of different optimization levels in GCC
+
+[see post](https://www.linkedin.com/posts/compilers-lab_theory-programming-compiler-activity-7326285792224456704-szta?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
+
+<img src="https://media.licdn.com/dms/image/v2/D4D22AQHvVXGP3nMieg/feedshare-shrink_2048_1536/B4DZawyGLWHAAo-/0/1746722647435?e=1762387200&v=beta&t=3gZ1FGcqZ-I_F0hVoeUbjuJj3ANfBX2a9jvYEBpB7vI" width="700" height="400">
 
 
+---
 
-     
-     <nav>
-      <h1><a href="http://localhost:4000/" style="color: white;"}>BenchGen</a></h1>
-     <!-- <a href="/">Home</a> -->
-      <a href="/blog">Blog</a>
-      <a href="/publications">Publications</a>
-      <a href="/news">News</a>
-      <a href="https://github.com/lac-dcc/BenchGen" target="_blank" 
-   style="display: inline-flex; align-items: center; padding: 10px 20px; 
-          background-color: #24292e; color: #fff; text-decoration: none; 
-          border-radius: 5px; font-weight: bold; font-family: sans-serif;">
-     <img src="./images/star.png" alt="Descrição da imagem" width="20" height="20">&nbsp;Star on GitHub</a>
-    </nav>
-    <br/><br/>
-    <div class="wrapper">
-      <header>
-        
-        
-        
-          <img src="/images/BenchGenLogo.png?raw=true" alt="Logo" />
-        
+### Clang and GCC comparison using BenchGen
 
-        <p><br> <p style="text-align:justify;">The BenchGen project aims to synthesize programs that are sufficiently expressive to stress-test computing systems, such as operating systems, compiler optimizations, memory allocation libraries and even computer architectures.<p><br><br>
-</p>
+[see post](https://www.linkedin.com/posts/compilers-lab_compilers-clang-gcc-activity-7310325694117388288-QPYp?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-        
-        <p class="view"><a href="https://github.com/benchGen/benchGen.github.io">View the Project on GitHub <small>benchGen/benchGen.github.io</small></a></p>
-        
+<img src="https://media.licdn.com/dms/image/v2/D4D22AQHoQ6HTvIc76g/feedshare-shrink_800/B4DZXN.edeHIAg-/0/1742917463147?e=1762387200&v=beta&t=gtAq12Vf4fpxS9YO--AhtUUU4H4nvLtA3PLS8ig2gEs" alt="Descrição da imagem" width="700" height="400">
 
-<!--         
- -->
-        
-      </header>
-      <section>
+---
 
-      <h2 id="blog">Blog</h2>
+### BenchGen - An C Benchmark Generator via L-Systems
 
-<hr />
+[see post](https://www.linkedin.com/posts/compilers-lab_breaking-news-students-from-ufmgs-compilers-activity-7255264752136798208-kdTH?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
 
-<h3 id="adding-a-new-programming-language-to-benchgen">Adding a New Programming Language to BenchGen</h3>
+<img src="https://media.licdn.com/dms/image/v2/D4D22AQG1acaq-mEV0g/feedshare-shrink_800/feedshare-shrink_800/0/1729789911667?e=1762387200&v=beta&t=UpmV3nxXRt36id063KvHpW7x_qbSw743nvGLMkkDjRs" alt="Descrição da imagem" width="700" height="400">
 
-<p><a href="https://github.com/lac-dcc/BenchGen/wiki/Adding-a-New-Programming-Language-to-BenchGen">read here</a></p>
+---
 
-<p><img src="./images/multilang.png" alt="Descrição da imagem" width="700" height="400" /></p>
+<img src="./images/reddit.png" width="20" height="20">
 
-<hr />
+---
 
-<h3 id="asymptotic-behavior-of-clang-and-gcc-compilers">Asymptotic Behavior of CLANG and GCC Compilers</h3>
+### r/ProgrammingLanguages
 
-<p><a href="https://github.com/lac-dcc/BenchGen/wiki/Asymptotic-Behavior-of-CLANG-and-GCC-Compilers">read here</a></p>
+[see post](https://www.reddit.com/r/ProgrammingLanguages/comments/1nil3we/benchgen_a_multilanguage_benchmark_generator_via/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
-<p><img src="https://raw.githubusercontent.com/lac-dcc/benchMetrics/refs/heads/main/data/asymptotic_behavior/gcc_and_clang.png" alt="Descrição da imagem" width="700" height="500" /></p>
+---
 
-<hr />
 
-<h3 id="comparing-gcc-and-clang">Comparing gcc and clang</h3>
+### r/Julia
 
-<p><a href="https://github.com/lac-dcc/BenchGen/wiki/Comparing-gcc-and-clang">read here</a></p>
+[see post](https://www.reddit.com/r/Julia/comments/1njqp4k/a_benchmark_generator_to_compare_the_performance/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
-<p><img src="https://raw.githubusercontent.com/lac-dcc/benchMetrics/refs/heads/main/data/compilers_comparison/compilers_comparison.png" alt="Descrição da imagem" width="900" height="400" /></p>
+---
 
-<hr />
+### r/Compilers
 
-<h3 id="comparing-gcc-versions">Comparing gcc versions</h3>
+[see post](https://www.reddit.com/r/Compilers/comments/1l542yk/benchgen_a_fractalbased_program_generator/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
-<p><a href="https://github.com/lac-dcc/BenchGen/wiki/Comparing-gcc-versions">read here</a></p>
+[see post](https://www.reddit.com/r/Compilers/comments/1njjiqk/a_benchmark_generator_to_compare_the_performance/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
-<p><img src="https://raw.githubusercontent.com/lac-dcc/benchMetrics/refs/heads/main/data/gcc_versions_comparison/gcc_old_and_new.png" alt="Descrição da imagem" width="600" height="600" /></p>
 
-<hr />
+
+---
+
+
+
+
+
+
+
+
 
 <!-- ### Did lockdowns influence the types of music people were listening to?
 COVID-19 has created an ostensible paradox in the music industry. In the four months after the World Health Organisation declared COVID-19 a pandemic on March 11, 2020, digital music streaming providers such as Spotify and Apple saw their share prices soar by 114% and 49% respectively (Google 2021b). Over the same period, however, worldwide digital music consumption dropped by an average of 12.5% (Sim et al. 2021). One of the reasons which has been suggested for this drop is the decline in certain types of mobility - especially driving, which accounts for 29% of music consumption, and commuting, as 54% of commuters listen to music while commuting (Nielsen 2015, 2017; Sim et al. 2021). What remains unclear, however, is whether and how changes to levels of mobility influenced the types of music to which people were listening. In this project, I investigate these questions using the Spotify API.
@@ -185,7 +143,7 @@ Matt
 
 ---
  -->
-
+ 
 <!--  ### Using BERT and Naïve Bayes models for helpfulness prediction of Amazon reviews
 The quality and helpfulness of online reviews can vary greatly, meaning readers must often sift through a deluge of online reviews in order to find the most relevant ones. In this project, I compared the performance of various ML models for predicting the helpfulness of an Amazon review given its text and metadata.  
 
@@ -195,15 +153,3 @@ The quality and helpfulness of online reviews can vary greatly, meaning readers 
 
 ---
  -->
-
-
-      </section>
-      <footer>
-        
-<!--         <p><small>Hosted on GitHub Pages</small></p> -->
-      </footer>
-    </div>
-    <script src="/assets/js/scale.fix.js"></script>
-    
-  </body>
-</html>
