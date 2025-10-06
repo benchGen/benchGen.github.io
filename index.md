@@ -63,6 +63,7 @@ See more: [here](https://github.com/lac-dcc/BenchGen/blob/main/README.md#buildin
 
 * <p style="text-align:justify;">To contribute to the alpha version of BenchGen, we have open <a href="https://github.com/lac-dcc/BenchGen/issues">issues</a> where you can help us make BenchGen even better.</p>
 
+* <p style="text-align:justify;">You can also report bugs by opening an issue <a href="https://github.com/lac-dcc/BenchGen/issues/new">here</a>.</p>
 ---
 
 ### Team
