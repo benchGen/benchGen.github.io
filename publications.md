@@ -4,7 +4,7 @@
 ---
 
 <a href="./pdf/BenchGen.pdf"><img src="./images/pdf.png" width="40" height="40"></a><br/>
-<p style="text-align:justify;">V. F. da Silva and F. M. Q. Pereira. <i>Benchmark Generation via L-Systems (Short Technical Report)</i>. Universidade Federal de Minas Gerais (UFMG), Brazil, 2025.</p>
+<p style="text-align:justify;">V. F. da Silva, F. M. Q. Pereira. <i>Benchmark Generation via L-Systems (Short Technical Report)</i>. Universidade Federal de Minas Gerais (UFMG), Brazil, 2025.</p>
 
 ---
 
