@@ -25,7 +25,7 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"&lt;p style=&quot;text-align:justify;&quot;&gt;The BenchGen project aims to synthesize programs that are sufficiently expressive to stress-test computing systems, such as operating systems, compiler optimizations, memory allocation libraries and even computer architectures.&lt;p&gt;","headline":"Benchmark Generation via L-Systems","name":"BenchGen","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/BenchGenLogo.png?raw=true"}},"url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=2c5fbfa4f20998d27b701bdd25311559b08b9af3">
+    <link rel="stylesheet" href="/assets/css/style.css?v=ff1fab9b3d289cfc04c27ea60b8120f2639d4778">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -169,6 +169,42 @@ make <span class="nt">-C</span> ./BenchGen/src/gen/
 </code></pre></div></div>
 
 <p>See more: <a href="https://github.com/lac-dcc/BenchGen/blob/main/README.md#building-benchgen">here</a></p>
+
+<hr />
+
+<h3 id="how-to-create-a-benchmark-via-l-grammar">How to create a benchmark via L-grammar</h3>
+<p>The L-system grammar used by <strong>BenchGen</strong> currently supports three commands:</p>
+
+<ul>
+  <li><strong>IF</strong> – conditional statements (<code class="language-plaintext highlighter-rouge">if-then-else</code>)</li>
+  <li><strong>LOOP</strong> – iterative structures (<code class="language-plaintext highlighter-rouge">for</code> and <code class="language-plaintext highlighter-rouge">while</code>)</li>
+  <li><strong>CALL</strong> – function calls</li>
+</ul>
+
+<p>BenchGen also employs <strong>data structures</strong> in its benchmarks, providing four functions for data manipulation:</p>
+
+<ul>
+  <li><strong>new:</strong> Creates and initializes a data structure.</li>
+  <li><strong>insert:</strong> Adds an element to a data structure in scope.</li>
+  <li><strong>remove:</strong> Deletes an element from a data structure in scope.</li>
+  <li><strong>contains:</strong> Checks whether an element exists in a data structure in scope.</li>
+</ul>
+
+<p>Based on this, we can define <strong>production rules</strong> that describe how the benchmark will be structured:</p>
+
+<h4 id="axiom">Axiom</h4>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CALL(new A)
+</code></pre></div></div>
+
+<h4 id="production-rules">Production Rules</h4>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A = LOOP(B C contains);
+B = IF(new LOOP(remove contains), new A remove contains);
+C = new contains B;
+</code></pre></div></div>
+
+<p style="text-align:justify;">This program, for instance, begins with a function call that creates a new data structure using the new command. Then, a loop structure is created according to rule A, which calls rules B and C, checking the structure using the contains command.</p>
+
+<p>For more details, our technical report provides additional information on the syntax of control structures in <a href="https://lac-dcc.github.io/pubs/TechReports/LaC_TechReport022025.pdf#page=4.77">Section 3.1</a>.</p>
 
 <hr />
 

@@ -56,6 +56,40 @@ See more: [here](https://github.com/lac-dcc/BenchGen/blob/main/README.md#buildin
 
 ---
 
+### How to create a benchmark via L-grammar
+The L-system grammar used by **BenchGen** currently supports three commands:
+
+* **IF** – conditional statements (`if-then-else`)  
+* **LOOP** – iterative structures (`for` and `while`)  
+* **CALL** – function calls  
+
+BenchGen also employs **data structures** in its benchmarks, providing four functions for data manipulation:
+
+* **new:** Creates and initializes a data structure.  
+* **insert:** Adds an element to a data structure in scope.  
+* **remove:** Deletes an element from a data structure in scope.  
+* **contains:** Checks whether an element exists in a data structure in scope.  
+
+Based on this, we can define **production rules** that describe how the benchmark will be structured:
+
+#### Axiom
+```text
+CALL(new A)
+```
+
+#### Production Rules
+```text
+A = LOOP(B C contains);
+B = IF(new LOOP(remove contains), new A remove contains);
+C = new contains B;
+```
+
+<p style="text-align:justify;">This program, for instance, begins with a function call that creates a new data structure using the new command. Then, a loop structure is created according to rule A, which calls rules B and C, checking the structure using the contains command.</p>
+
+For more details, our technical report provides additional information on the syntax of control structures in [Section 3.1](https://lac-dcc.github.io/pubs/TechReports/LaC_TechReport022025.pdf#page=4.77).
+
+---
+
 ### Contributing
 
 * <p style="text-align:justify;">BenchGen, in its beta version, supports generating benchmarks in multiple programming languages. To contribute by adding new programming languages, you can follow this <a href="https://github.com/lac-dcc/BenchGen/wiki/Adding-a-New-Programming-Language-to-BenchGen">documentation</a>, which explains step-by-step how to add and use BenchGen with your programming language!</p>
