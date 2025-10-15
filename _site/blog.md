@@ -35,7 +35,13 @@
 ---
 
 
+### Comparing Compilers
 
+[read here](https://github.com/lac-dcc/benchMetrics/tree/main/data/compilers_experiment)
+
+<img src="https://raw.githubusercontent.com/lac-dcc/benchMetrics/refs/heads/main/data/compilers_experiment/assets/compilers.png" alt="Descrição da imagem" width="700" height="300">
+
+---
 
 
 
