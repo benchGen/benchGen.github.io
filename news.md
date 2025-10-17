@@ -6,6 +6,14 @@
 
 ---
 
+### The Impact of Profile Guided Optimizations
+
+[see post](https://www.linkedin.com/posts/compilers-lab_compiler-research-programming-activity-7384698030937165825-4NQa?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
+
+<img src="./images/1760649210634.jpeg">
+
+---
+
 ### Request for Feedback
 
 [see post](https://www.linkedin.com/posts/compilers-lab_vinicius-silva-viniciusilvaieeeorg-and-activity-7379876088342020096-2v-f?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
@@ -96,6 +104,8 @@
 ---
 
 ### r/Compilers
+
+[see post](https://www.reddit.com/r/Compilers/comments/1o96bb7/the_impact_of_profile_guided_optimizations/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
 [see post](https://www.reddit.com/r/Compilers/comments/1l542yk/benchgen_a_fractalbased_program_generator/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
