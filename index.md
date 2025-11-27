@@ -114,6 +114,11 @@ For more details, our technical report provides additional information on the sy
 
 ---
 
+### Sponsored
+<img src="images/google_logo.png" height="100" width="190" /><img src="images/fapemig.png" height="150" width="190"/>
+
+---
+
 <!-- ### Did lockdowns influence the types of music people were listening to?
 COVID-19 has created an ostensible paradox in the music industry. In the four months after the World Health Organisation declared COVID-19 a pandemic on March 11, 2020, digital music streaming providers such as Spotify and Apple saw their share prices soar by 114% and 49% respectively (Google 2021b). Over the same period, however, worldwide digital music consumption dropped by an average of 12.5% (Sim et al. 2021). One of the reasons which has been suggested for this drop is the decline in certain types of mobility - especially driving, which accounts for 29% of music consumption, and commuting, as 54% of commuters listen to music while commuting (Nielsen 2015, 2017; Sim et al. 2021). What remains unclear, however, is whether and how changes to levels of mobility influenced the types of music to which people were listening. In this project, I investigate these questions using the Spotify API.
 
