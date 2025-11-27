@@ -2,6 +2,14 @@
 
 ---
 
+### Comparing GLib data structures
+
+[read here](https://github.com/lac-dcc/BenchGen/wiki/Comparing-GLib-data-structures)
+
+<img src="./images/509729395-72d52893-cc95-4320-ad65-1ce1dc215dbe.png" alt="Descrição da imagem" width="700" height="290">
+
+---
+
 ### Experiment with Profile Guided Optimization (PGO)
 
 [read here](https://github.com/lac-dcc/BenchGen/wiki/Experiment-with-Profile-Guided-Optimization-(PGO))

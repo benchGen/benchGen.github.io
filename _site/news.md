@@ -6,6 +6,22 @@
 
 ---
 
+### Comparing GLib Data Structures
+
+[see post](https://www.linkedin.com/feed/update/urn:li:activity:7395115283528536065/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
+
+<img src="./images/1763125260107.jpeg">
+
+---
+
+### BenchGen, our fractal-based program generator, now supports V!
+
+[see post](https://www.linkedin.com/feed/update/urn:li:activity:7394012884726333441/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
+
+<img src="./images/1762864761693.jpeg">
+
+---
+
 ### The Impact of Profile Guided Optimizations
 
 [see post](https://www.linkedin.com/posts/compilers-lab_compiler-research-programming-activity-7384698030937165825-4NQa?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
