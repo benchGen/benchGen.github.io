@@ -114,6 +114,24 @@ For more details, our technical report provides additional information on the sy
 
 ---
 
+### Citation
+
+To cite the BenchGen project, use the following BibTeX command below.
+
+```bibtex
+@misc{dasilva2025multilanguagebenchmarkgenerationlsystems,
+      title={Multi-Language Benchmark Generation via L-Systems}, 
+      author={Vinícius Francisco da Silva and Heitor Leite and Fernando Magno Quintão Pereira},
+      year={2025},
+      eprint={2512.17616},
+      archivePrefix={arXiv},
+      primaryClass={cs.PL},
+      url={https://arxiv.org/abs/2512.17616}, 
+}
+```
+
+---
+
 ### Sponsored
 <img src="images/google_logo.png" height="100" width="190" /><img src="images/fapemig.png" height="150" width="190"/>
 
