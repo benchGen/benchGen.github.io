@@ -6,6 +6,22 @@
 
 ---
 
+### The paper "Multi-Language Benchmark Generation via L-Systems" is available in arXiv!
+
+[see post](https://www.linkedin.com/posts/compilers-lab_research-compiler-academia-activity-7408838161784684545-87Pd?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
+
+<img src="./images/1766404666320.jpeg">
+
+---
+
+### BenchGen now supports Odin and Zig benchmarks!
+
+[see post](https://www.linkedin.com/posts/compilers-lab_research-academia-compiler-activity-7401598328016347136-FtpB?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
+
+<img src="./images/1764678555463.jpeg">
+
+---
+
 ### Comparing GLib Data Structures
 
 [see post](https://www.linkedin.com/feed/update/urn:li:activity:7395115283528536065/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACSrPnkB6N0_TvgJ615gZ93lEQ8n_zD3p2Q)
