@@ -109,7 +109,6 @@ For more details, our technical report provides additional information on the sy
 ### Team
 
 * [Vinicius Francisco da Silva](mailto:viniciusilva@ieee.org) - Federal University of Minas Gerais (UFMG)
-* Heitor Leite - Federal University of Minas Gerais (UFMG)
 * Fernando Magno Quintão Pereira - Federal University of Minas Gerais (UFMG)
 
 ---
